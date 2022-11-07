@@ -1,0 +1,528 @@
+/* --------------------------Le tout-----------------------------*/
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* --------------------------L'en tête-----------------------------*/
+header {
+    height: 100px;
+    width: 100%;
+    border: 1px solid black;
+    background-color: #ffffff38;
+}
+
+
+/* ----------------Barre de navigation--------------------*/
+.navbar {
+    position: absolute;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: black;
+}
+
+.navbar .navlinks ul {
+    display: flex;    
+}
+
+.navbar .navlinks ul li {
+    display: flex;
+    margin: 0 25px;
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+
+
+
+/* --------------------------Accueil-----------------------------*/
+
+/* ---------body de la page d'accueil----------*/
+.bcg-accueil {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(image/plateau_citron1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+/* ---------contenu de la page d'accueil----------*/
+.accueil .bloctitre-accueil {
+    margin: 150px;
+    padding: 40px;
+    border: 0.1em solid black;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.192);
+    animation: apparition 2.5s ease-out;
+}
+
+.accueil .titresissi {
+    margin-left: 270px;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+/* !!------------------------------------------------------------------------------------!!
+
+
+
+/* --------------------------Scroll Horizontal-----------------------------*/
+/* ----------------------pour A propos et Histoire-------------------------*/
+/*
+.slide {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    
+}
+
+.blochorizontal {
+    display: flex;
+    flex-direction: row;
+    width: 200vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    
+}
+
+
+.container {
+    width: 100vh; /* comme on le retoune la hauteur et le largeur vont s'inverser */ /*
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+*/
+
+/* --------------------------Background-----------------------------*/
+/* --------------------A propos et Histoire-------------------------*/
+/*
+.bcg-apropos-histoire {
+    background-image: url(image/bcg-apropos-histoire.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* --------------------------A propos-----------------------------*/
+/*
+.apropos1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+!!------------------------------------------------------------------------------------!!
+
+
+
+
+
+
+
+/* --------------------------Background-----------------------------*/
+/* ---------------------------A propos------------------------------*/
+
+.bcg-apropos {
+    background-image: url(image/bcg-apropos-histoire.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* --------------------------A propos-----------------------------*/
+
+/* ------------A propos de nous--------------*/
+.titre-page {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px ;
+}
+
+.titre-apropos h1 {
+    font-size: 40px ;
+}
+
+/* ------------Recette familliale--------------*/
+.notrehistoire {   
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.notrehistoire h2 {
+    color: #6d7c40;
+    font-family: 'Playfair Display', serif;
+}
+
+.notrehistoire p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+
+/* ------------bloc1 et bloc2--------------*/
+.blocs-apropos {
+    margin-left: 320px;
+    margin-right: 300px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ------------Ingrédients bloc1--------------*/
+.bloc1-ap {
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 20px;
+    height: 450px;
+    width: 450px;
+}
+
+.bloc1-ap h2 {
+    color: #6d7c40;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.bloc1-ap ul {
+    padding-inline-start: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.bloc1-ap p {
+    padding-inline-start: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+/* ------------Où nous déguster bloc2--------------*/
+.bloc2-ap {
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 20px;
+    height: 450px;
+    width: 450px;
+}
+
+.bloc2-ap h2 {
+    color: #6d7c40;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.bloc2-ap ul {
+    padding-inline-start: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+.bloc2-ap h3 h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.bloc2-ap p {
+    padding-inline-start: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+
+
+
+/* --------------------------Histoire-----------------------------*/
+.bcg-histoire {
+    background-image: url(image/bcg-apropos-histoire.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bloc-histoire {
+
+    display: flex;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 85px;
+
+}
+
+.bloc-histoire h3 {
+    font-size: 22px;
+    margin-bottom: 40px;
+    padding-top: 30px;
+    font-family: 'Playfair Display', serif;
+    color: #6d7c40;
+    background-color: #ffffff9d;
+    text-align: center;
+}
+
+.origine {
+    border: 1px solid green;
+    border-radius: 5px;
+    height: 400px;
+    width: 400px;
+    margin-right: 50px;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bloc-histoire p {
+    text-align: left;
+}
+
+.tunis {
+    border: 1px solid green;
+    border-radius: 5px;
+    height: 400px;
+    width: 400px;
+    margin-right: 50px ;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.video-cyracuse {
+    margin-top: -15px;
+}
+
+
+/* --------------------------Articles-----------------------------*/
+
+
+.bcg-article {
+    background-image: url(image/bcg-apropos-histoire.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nom-article {
+    margin-left: 200px;
+    margin-top: 100px;
+    flex-direction: row;
+    display: flex;
+    position: absolute;
+}
+
+
+
+.nom-article img {
+    height: 400px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.nom-article img:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 35px 50px -10px #e5c544;
+}
+
+
+.photo1 {
+    margin-right: 100px;
+}
+
+.photo2 {
+    margin-right: 100px;
+}
+
+.photo1 p {
+    padding-inline-start: 15px;
+    background-color: #ffffff9d;
+    text-decoration: none;
+    color: black;
+}
+
+.photo2 p {
+    padding-inline-start: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.photo3 p {
+    padding-inline-start: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.click {
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #6d7c40;
+    font-size: 18px;
+}
+
+
+
+/* --------------------------Contacts-----------------------------*/
+
+.bcg-contact {
+    background-image: url(image/bck-contact.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/* ---------------------Formulaire-----------------------*/
+/* ----------------------Contacts------------------------*/
+.container {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.container form {
+    width: 670px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 10px 40px black;
+    border-radius: 15px;
+    background: #ffffff38;
+    backdrop-filter: blur(2px);
+    flex-wrap: wrap;
+}
+
+.container form h1 {
+    color: black;
+    font-weight: 500px;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.container form input {
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid black;
+}
+
+.container form input::placeholder {
+    color: black;
+}
+
+.container form #nom,
+.container form #telephone {
+    margin-left: 20px;
+}
+
+.container form h4 {
+    color: black;
+    font-weight: 300;
+    font-size: 20px;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.container form textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    color: black;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+.container form #buton {
+    border: none;
+    background: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.container form #buton:hover {
+    opacity: 0.7;
+}
+
+
+
+
+/* --------------------------Pied de page-----------------------------*/
+
+footer {
+    margin-top: 100px;
+    border: 1px solid black;
+    background-color: #ffffff38;
+}
+
+
+.bcgfooter-contact {
+    height: 160px;
+}
+
+.bcgfooter-contact ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.nos-resaux {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.nos-contact {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}

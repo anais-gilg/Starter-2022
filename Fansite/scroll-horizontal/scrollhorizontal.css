@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.blochorizontal {
+    display: flex;
+    flex-direction: row;
+    width: 300vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.container {
+    width: 100vh; /* comme on le retoune la hauteur et le largeur vont s'inverser */
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-x: hidden;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    scroll-snap-align: start;
+}
+
+
+.one {
+    background: aquamarine;
+}
+
+.two {
+    background: bisque;
+}
+
+.three {
+    background: cadetblue;
+}
